@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;  /*GARANTE QUE O PREENCHIMENTO/padding SEJA INCLUIDO NO CALCULO DA LARGURA, EVITANDO QUE O CONTEÚDO ULTRAPASSE A TELA */
+}
+
+
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    padding: min(5vh, 4rem);   /*AJUSTANDO O PADDING PARA SER MAIS FLEXÍVEL*/
+    background-color: #070902;
+    width: 100%;  /*COLOCAMOS A LARGURA PARA 100% DO ESPAÇO DISPONIVEL*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*AQUI COMEÇAMOS O POSICIONAMENTO DO header*/
+
+    position: sticky;  /*POSIONAMENTO DO header USANDO O Stick, SENDO UM POSICIONAMENTO FIXO, POREM DISTINTO DO Fixed*/
+
+    top: 0;  /*ESPAÇAMENTO SUPERIOR ZERADO, FAZENDO COM QUE O header FIQUE GRUDADO AO TOP*/
+
+    left: 0; /*ESPAÇAMENTO A ESQUERDA ZERADO, FAZENDO COM QUE O header FIQUE GRUDADO A ESQUERDA*/
+
+    z-index: 999;  /*EIXO DE PROFUNDIDADE (EIXO CARTESIANO)*/
+
+   box-shadow: 0 0.21rem 0.5rem white;  /*PRIMEIRO VALOR SOMBRA NA DIREITA (0), SEGUNDO VALOR SOMBRA BOTTOM (0.21REM), TERCEIRO VALOR GRADIANT DA SOMBRA (0.5REM)*/
+
+}
+
+header img {
+    height: 100px;
+    width: 110px;
+}
+
+header button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color: #1d2206;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: #ffffff;
+}

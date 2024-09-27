@@ -47,4 +47,7 @@ header button {
     border-radius: 1rem;
     padding: 1.3rem;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

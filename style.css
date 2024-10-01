@@ -52,11 +52,23 @@ header button {
     justify-content: center;
 }
 
+
+.section-01 {
+    background-color: #010003; /* DEFINIÇÃO DE COR DE FUNDO*/
+    padding: 20vh;  /* PREENCHIMENTO */
+    display: flex;  /* TORNANDO A SECTION FLEX*/
+    justify-content: space-between; /* JUSTIFICANDO O CONTEUDO*/
+    align-items: center; /* ALINHANDO OS ITENS AO CENTRO */
+    width: 100vw; /* DEFININDO A LARGURA PARA 100% */
+}
+
+
+
 .section-02 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #000000;
+    background-color: #ffffff;
     width: 100%;
     padding: min(20vh, 6rem);
 
@@ -65,11 +77,98 @@ header button {
 .div-01 p {
     font-size: 2em;
     margin: 1.2em;
-    background-color: #ffffff;
+    color: #ffffff
 }
 
 .div-02 img {
     width: ;
+}
+
+.div-03 img {
+    width: 80vh;
+
+}
+
+.div-04 p {
+    font-size: 2em;
+    margin: 1.2em;
+    color: #010003;
+
+}
+
+.section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #070902;
+    width: 100%;
+    padding: min(20vh, 6rem);
+    
+}
+
+.div-pai {  /* ELEMKENTO PAI DAS CAIXAS (3 DIVS)*/
+    display: flex;   /*TORNANDO ELE FLEXIVEL */
+    justify-content: center;    /*JUSTIFICANDO OS ITENS NA HORIZONTAL*/
+    align-items: center;  /* JUSTIFICANDO OS ITENS NA HORIZONTAL */
+    margin-bottom: 10rem; /* ESPAÇAMENTO INFERIOR EM RELAÇÃO A SESSÃO */
+    z-index: 1;   /* PRIORIDADE NO EIXO Z (EIXO CARTESIANO)*/
+    flex-wrap: wrap;  /* HABILITANDO QUEBRA DE LINHA DAS CAIXAS CASO NECESSARIO*/
+    position: relative;  /* POSICIONAMENTO RELATIVO */
+}
+
+.card {
+    width: 200px;  /* LARGURA DA CAIXA */
+    height: 400px;  /* ALTURA DA CAIXA */
+    margin: 30px;  /* ESPAÇAMENTO GERAL */
+    box-shadow: 20px 20px 50px purple;   /* SOMBRA DA CAIXA E COR */
+    border-radius: 15px;   /* ARREDONDAMENTO DA BORDA*/
+    background: rgba(233, 167, 223, 0.288);    /* COR DE FUNDO DO ELEMENTO */
+}
+
+.content {
+    padding: 20px;     /* PREECHIMENTO INTERNO DO CONTEUDO*/
+    text-align: center;   /* ALINHANDO O CONTEUDO AO CENTRO  */
+    transform: translateY(50px);   /* ESTABELECENDO UM RAIO DE 50PX DE ESPAÇO NO EIXO Y  */
+    opacity: 0.2;    /* 20% DE OPAÇIDADE*/
+    transition: 0.5s;    /* APLICANDO UMA TRANSIÇÃO NO EVENTO*/
+}
+
+.content:hover {
+    opacity: 1;   /*100% DE VISIBILIDADE  */
+    transform: translateY(0px);    /*APLICANDO O RETORNO DO CONTEUDO AO EIXO Y em 0  */
+}
+
+.content h2 {
+    position: absolute;    /* POSICIONAMENTO ABSOLUTO EM RELAÇÃO AO PAI*/
+    right: 30px;   /*JOGANDO ELE 30PX A DIREITA */
+    font-size: 5rem;     /*TAMANHO DA LETRA */
+    color: grey;  /*COR DA LETRA- DEIXAR NO TRANSPARENTE  */
+}
+
+.content h3 {
+    font-size: 1.8em;   /* TAMANHO DA LETRA */
+    color: white;    /* COR DA LETRA*/
+    z-index: 1;    /*PRIORIDADE NO EIXO Z */
+}
+
+.content p {
+    font-size: 0.8em; /* TAMANHO DA LETRA */
+    color: white;   /* COR DA LETRA */
+    font-weight: 300;  /* PESO DA FONTE  */
+    margin-top: 4rem;  /* ESPAÇAMENTO SUPERIOR  */
+}
+
+.content a {
+    padding: 8px 20px;  /*PREECHIMENTO DO EIXO X E Y  */
+    background: white;  /* COR DE FUNDO */
+    color: black;   /* COR DA LETRA */
+    text-decoration: none;  /*  REMOVENDO O SUBLINHADO */
+    border-radius: 15px;  /* ARREDONDAMENTO DA BORDA  */
+    font-weight: 500;    /*PESO DA FONT */
+    margin-top: 2.7rem;   /*ESPAÇAMENTO SUPERIOR */
+    box-shadow: 0 5px 15px black;   /*SOMBRA DA CAIXA  */
+    display: inline-block;  /* COMPORTAMENTO DO BOTÃO EM LINHA E SEMPRE EM BLOCO  */
+    position: relative;   /* POSICIONAMENTO RELATIVO */
 }
 
 footer {
